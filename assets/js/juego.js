@@ -112,7 +112,7 @@ const turnoComputador = (puntosMinimos) => {
             alert('Bot gana!')
         }
 
-    }, 45);
+    }, 10);
 }
 
 // EVENTOS

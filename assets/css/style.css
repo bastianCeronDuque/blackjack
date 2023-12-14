@@ -1,15 +1,14 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   margin: 0px;
-  background-color: #2F4F30;
+  background-color: #2f4f30;
   color: white;
 }
-
 
 .titulo {
   text-align: center;
@@ -26,33 +25,33 @@ html, body {
   margin-left: -75px;
 }
 
-#bot-cartas, #jugador-cartas {
+#bot-cartas,
+#jugador-cartas {
   height: 240px;
-=======
+}
 html,
 body {
-    margin: 0px;
-    background-color: #2f4f30;
-    color: white;
-    height: 800px;
+  margin: 0px;
+  background-color: #2f4f30;
+  color: white;
+  height: 800px;
 }
 
 .title {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
 }
 .carta {
-    position: relative;
-    width: 150px;
-    left: 100px;
-    margin-left: -75px;
+  position: relative;
+  width: 150px;
+  left: 100px;
+  margin-left: -75px;
 }
 
 #Computador-cartas,
 #jugador-cartas {
-    height: 240px;
->>>>>>> 9f8002a0c54c547868db7089f235df007292e549
+  height: 240px;
 }

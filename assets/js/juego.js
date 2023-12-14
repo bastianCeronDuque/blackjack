@@ -7,6 +7,7 @@ las cartas estan en ingles por eso lo vamos a trabajar de esta forma
 2S = dos de espadas
 */
 (() => {
+  
   let deck = [];
   const tipos = ["C", "D", "H", "S"];
   const especiales = ["A", "J", "Q", "K"];

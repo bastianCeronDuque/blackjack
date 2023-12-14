@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -27,4 +28,31 @@ html, body {
 
 #bot-cartas, #jugador-cartas {
   height: 240px;
+=======
+html,
+body {
+    margin: 0px;
+    background-color: #2f4f30;
+    color: white;
+    height: 800px;
+}
+
+.title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#Computador-cartas,
+#jugador-cartas {
+    height: 240px;
+>>>>>>> 9f8002a0c54c547868db7089f235df007292e549
 }

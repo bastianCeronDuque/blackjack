@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 las cartas estan en ingles por eso lo vamos a trabajar de esta forma
 
@@ -13,7 +12,6 @@ const tipos = ["C", "D", "H", "S"];
 const especiales = ["A", "J", "Q", "K"];
 let puntosJugador = 0,
   puntosBot = 0;
-//esta funcion crea la baraja
 
 //referencias html
 const btnPedir = document.querySelector("#btnPedir");
@@ -153,89 +151,9 @@ btnNuevo.addEventListener("click", () => {
   divCartasBot.innerHTML = "";
   divCartasJugador.innerHTML = "";
 });
-=======
-
-
 /*
-2C = 2 DE TREBOLES
-2D = 2 DE DIAMANTES
-2H = 2 DE CORAZONES
-2S = 2 DE ESPADAS
- */
 
 
-let deck = [];
-const tipos = ['C', 'D', 'H', 'S'];
-const especiales = ['A', 'J', 'Q', 'K'];
-
-let puntosJugador = 0
-puntosComputador = 0
-
-
-// referencias del html
-const btnNuevo = document.querySelector('#btnNuevo')
-const btnPedir = document.querySelector('#btnPedir')
-const btnDetener = document.querySelector('#btnDetener')
-const divCartasJugador = document.querySelector('#jugador-cartas')
-const puntosHTML = document.querySelectorAll('small')
-const divCartasComputador = document.querySelector('#computador-cartas')
-
-//esta funcion crea una nueva baraja
-const crearDeck = () => {
-
-    for (let i = 2; i <= 10; i++) {
-        for (let tipo of tipos) {
-            deck.push(i + tipo);
-
-        }
-    }
-    for (let tipo of tipos) {
-        for (let esp of especiales) {
-            deck.push(esp + tipo)
-        }
-    }
-
-    // console.log(deck);
-    deck = _.shuffle(deck)
-    console.log(deck);
-    return deck;
-}
-
-crearDeck()
-
-//esta funcion permite tomar una carta
-
-const pedirCarta = () => {
-    if (deck.length === 0) {
-        throw 'No hay cartas en el deck'
-    }
-    const carta = deck.pop();
-    // console.log(deck);
-    // console.log(carta);
-    return carta
-}
-// pedirCarta();
-
-const valorCarta = (carta) => {
-
-    const valor = carta.substring(0, carta.length - 1)
-
-    return (isNaN(valor)) ?
-        (valor === 'A') ? 11 : 10
-        : valor * 1
-
-
-
-    // let puntos = 0
-    // if (isNaN(valor)) {
-    //     puntos = (valor === 'A') ? 11 : 10
-    // } else {
-    //     puntos = valor * 1
-    // }
-    // console.log(puntos);
-}
-const valor = valorCarta(pedirCarta())
-// console.log({ valor });
 
 
 /*  TURNO DEL COMPUTADOR */
@@ -323,9 +241,3 @@ btnNuevo.addEventListener('click', () => {
     btnPedir.disabled = false
     btnDetener.disabled = false
 })
-
-
-// // TODO: BORRAR
-// console.log(16);
-// turnoComputador(16)
->>>>>>> 9f8002a0c54c547868db7089f235df007292e549
